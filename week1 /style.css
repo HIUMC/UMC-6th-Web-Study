@@ -1,0 +1,36 @@
+body{
+    margin:0;
+          }
+     
+  
+      a {
+          color:rgba(73, 23, 23, 0.569);
+          text-decoration: underline;
+          }
+      h2{
+          font-size: 45px;
+          text-align: center;
+          border-bottom: 15px solid rgb(27, 80, 101);
+          margin: 0px;
+          padding: 70px;
+      }
+      ol{
+          border-right: 10px solid rgb(56, 62, 115);
+          width: 83px;
+          padding: 55px;
+          margin: 0px;
+    
+      }
+      
+      #grid{
+          display:grid;
+          grid-template-columns: 250px 1fr;
+
+      }
+
+      #article{
+          padding:10px;
+      }
+    
+  
+    
