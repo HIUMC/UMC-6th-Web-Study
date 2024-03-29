@@ -1,0 +1,108 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+.web {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.signup {
+    text-align: center;
+    border-bottom: 2px solid #0e0d0d;
+    padding-bottom: 10px;
+}
+
+.signup button {
+    background-color: #67676e;
+    color: #fff;
+    border: none;
+    padding: 10px 10px;
+    font-size: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.signup button:hover {
+    background-color: #274c76;
+}
+
+.v-line {
+    display: inline-block;
+    width: 2px;
+    height: 20px;
+    background-color: #ccc;
+    margin: 0 10px;
+    vertical-align: middle;
+}
+
+.like-fruit a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.fruit-description {
+    margin-bottom: 40px;
+    border-bottom: 2px solid #0e0d0d;
+    padding-bottom: 20px;
+}
+
+.like-fruit a:hover {
+    text-decoration: underline;
+}
+
+.hate-fruit a {
+    color: #ff6600;
+    text-decoration: none;
+}
+
+.hate-fruit a:hover {
+    text-decoration: underline;
+}
+
+.apple-detail p {
+    color: #555;
+    line-height: 1.6;
+}
+
+.image {
+    text-align: center;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.apple-detail {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.durian-detail p {
+    color: #555;
+    line-height: 1.6;
+}
+
+.durian-detail {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
