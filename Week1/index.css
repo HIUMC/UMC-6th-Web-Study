@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 30px;
+}
+
+nav {
+  max-width: 220px;
+  height: auto;
+  padding: 10px 0;
+  border: 1px solid black;
+}
+
+h2 {
+  margin-bottom: 10px;
+  border-bottom: 1px solid gray;
+}
