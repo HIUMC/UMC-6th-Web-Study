@@ -29,17 +29,16 @@ body {
   border-bottom: 1px solid white;
 }
 
-form {
+.form {
   padding: 0 1.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-form > p {
+.form > p {
   width: 100%;
-  margin-top: 12px;
-  margin-bottom: 2px;
+  margin: 2px 0;
   font-size: 12px;
   font-weight: 500;
 }
@@ -52,7 +51,12 @@ input {
   outline: none;
 }
 
-form > button {
+.form > .comment {
+  margin-bottom: 2px;
+  font-size: 10px;
+}
+
+.form > button {
   width: 60%;
   margin-top: 20px;
   padding: 5px 0;
