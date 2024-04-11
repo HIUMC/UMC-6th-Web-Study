@@ -6,11 +6,11 @@ import Button from './components/Button';
 import Modal from './components/main';
 const App = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
-  const modalContent = "모달 내용입니다.";
+  const modalContent = "모달 내용.";
 
   return (
     <div>
-      <h1>모달을 열고 닫아보세요</h1>
+      <h1>안녕하세여</h1>
       <Button onClick={() => setModalIsOpen(true)} color="black" text="모달 열기" />
       <Modal isOpen={modalIsOpen} onClose={() => setModalIsOpen(false)} content={modalContent} />
     </div>
