@@ -1,0 +1,31 @@
+.back {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal {
+  border: solid black;
+  position: fixed;
+  width: 350px;
+  height: 100;
+  padding: 18px;
+  top: 35%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 4px;
+  background-color: white;
+}
+
+.modal #title {
+  margin: 0;
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.modal button {
+  text-align: right;
+}
