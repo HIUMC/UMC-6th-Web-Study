@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>모달 만들기</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./modalStyle.css" />
+  </head>
+  <body>
+    <div>
+      <h1>안녕하세요</h1>
+      <h4>내용내용내용</h4>
+      <button onclick="openBtn()">버튼 열기</button>
+    </div>
+    <main id="screen">
+      <div id="modal" style="display: none">
+        <p><b>안녕하세요</b></p>
+        <p><b>모달 내용은 어쩌고 저쩌고</b></p>
+        <button onclick="closeBtn()">닫기</button>
+      </div>
+      <script src="./modal.js"></script>
+    </main>
+  </body>
+</html>

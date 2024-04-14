@@ -1,0 +1,12 @@
+#modal {
+  border: solid 1px black;
+  width: 200px;
+  border-radius: 5px;
+  justify-self: center;
+  align-self: center;
+}
+#screen {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+}
