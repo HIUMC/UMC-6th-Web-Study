@@ -1,0 +1,27 @@
+.App-true {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup-false {
+  display: none;
+}
+
+.popup-true {
+  background-color: white;
+  width: 300px;
+  height: 120px;
+  position: absolute;
+
+  top: 30%;
+  right: 40%;
+  padding: 20px;
+  border: 1px black solid;
+}
+
+.closebutton {
+  width: 50px;
+  position: absolute;
+  left: 80%;
+}
