@@ -9,14 +9,15 @@
     <div class="container">
       <h2 class="title">안녕하세요!</h2>
       <div class="context">내용내용내용</div>
-      <button>버튼열기</button>
-      <div class="modal__container">
+      <button onclick="openModal()">버튼열기</button>
+      <div class="modal__container" id="modal">
         <div class="modal">
           <h2>안녕하세요</h2>
           <div class="modal__context">모달 내용은 어쩌구 저쩌구</div>
-          <button class="modal__button">닫기</button>
+          <button class="modal__button" onclick="closeModal()">닫기</button>
         </div>
       </div>
     </div>
   </body>
+  <script src="modal.js"></script>
 </html>
