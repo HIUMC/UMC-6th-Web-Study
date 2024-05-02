@@ -2,14 +2,20 @@
 <html>
   <head>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="index.css" />
     <title>모달</title>
   </head>
   <body>
     <h1>안녕하세요!</h1>
     <p>내용내용내용</p>
-    <button>버튼 열기</button>
-    <p>안녕하세요</p>
-    <p>모달 내용은 어쩌고 저쩌고..</p>
-    <button>닫기</button>
+    <button id="open">버튼 열기</button>
+    <div id="modal">
+      <div id="content">
+        <p>안녕하세요</p>
+        <p>모달 내용은 어쩌고 저쩌고..</p>
+        <button id="close">닫기</button>
+      </div>
+    </div>
   </body>
+  <script src="index.js"></script>
 </html>
