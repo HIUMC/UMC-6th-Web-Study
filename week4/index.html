@@ -1,22 +1,55 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
+    <title>회원가입</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <h1>안녕하세요!</h1>
-    <p>내용내용내용</p>
-    <button id="modalBtn">버튼 열기</button>
-    <div class="modal">
-      <div class="modalbody">
-        <div class="modaltitle">안농하세요</div>
-        <div class="modal-content">
-          <p>내용내용내용</p>
-        </div>
-        <button id="closeBtn">닫기</button>
-      </div>
+    <div class="container">
+      <h2>회원가입</h2>
+      <form>
+        <label for="username">이름</label>
+        <input type="text" id="username" name="username" placeholder="이름" />
+        <p id="usernameError" class="error"></p>
+        <p id="usernameNoError" class="noerror"></p>
+
+        <label for="email">이메일</label>
+        <input type="email" id="email" name="email" placeholder="이메일" />
+        <p id="emailError" class="error"></p>
+        <p id="emailNoError" class="noerror"></p>
+
+        <label for="age">나이</label>
+        <input type="age" id="age" name="age" placeholder="나이" />
+        <p id="ageError" class="error"></p>
+        <p id="ageNoError" class="noerror"></p>
+
+        <label for="password">비밀번호</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="비밀번호"
+        />
+
+        <p id="passwordError" class="error"></p>
+        <p id="passwordNoError" class="noerror"></p>
+
+        <label for="confirmPassword">비밀번호 확인</label>
+        <input
+          type="password"
+          id="confirmPassword"
+          name="confirmPassword"
+          placeholder="비밀번호 확인"
+        />
+        <p id="confirmPasswordError" class="error"></p>
+        <p id="confirmPasswordNoError" class="noerror"></p>
+
+        <button type="submit">가입하기</button>
+        <div id="error" class="error"></div>
+      </form>
     </div>
-    <script src="script.js"></script>
+    <script src="s.js"></script>
+    </div>
   </body>
 </html>
