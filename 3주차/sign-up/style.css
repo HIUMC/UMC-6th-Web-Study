@@ -5,6 +5,15 @@ body {
   justify-content: center;
 }
 
+#signupBtn {
+  width: 200px;
+  height: 33px;
+  background-color: rgb(115, 115, 115);
+  border: none;
+  border-radius: 4px;
+  color: white;
+}
+
 #form-wrap {
   display: flex;
   text-align: center;
@@ -40,6 +49,7 @@ input:focus {
 
 p {
   margin: 0;
+  font-size: small;
 }
 
 div {
