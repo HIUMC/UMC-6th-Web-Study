@@ -21,7 +21,7 @@ function isValidName() {
 
 function isValidEmail() {
   const validation = document.querySelector("#email .validation");
-  if (email.value === '') {
+  if (email.value === '' || !email.value.includes('@')) {
     validation.innerText = "올바른 이메일 형식이 아닙니다!";
     validation.style.color = "red";
   } else {
@@ -79,13 +79,15 @@ button.onclick = () => {
   const userAge = isValidAge();
   const userPw = isValidPassword();
   const userPwCheck = isValidPwCheck();
-  if (userName && 
-      userEmail &&
-      userAge &&
-      userPw &&
-      userPwCheck) {
-        modal.style.display = "";
-    }
+  if (userName &&
+    userEmail &&
+    userAge &&
+    userPw &&
+    userPwCheck) {
+    modal.style.display = "";
+  } else {
+    return;
+  }
 };
 
 close.onclick = () => {
