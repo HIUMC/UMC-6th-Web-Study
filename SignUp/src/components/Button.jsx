@@ -10,7 +10,7 @@ const Button = ({ onClick, color, text }) => {
 };
 
 Button.defaultProps = {
-  color: 'black',
+  color: 'red',
 };
 
 

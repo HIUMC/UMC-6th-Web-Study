@@ -1,0 +1,60 @@
+.head{
+  color:rgb(255, 255, 255);
+  text-align: center;
+  font-size: 50px;
+  text-shadow: 2px 2px 2px  #000000; /* X, Y, 블러 반경, 색상 */
+}
+
+.movie-grid{
+  display: grid;
+  margin: 10;
+  border-radius: 5px;
+  grid-template-columns: repeat(8,1fr);
+  gap: 50px; 
+  padding: 20px; 
+}
+
+.movie-info{
+  display: grid;
+  background-color: rgb(26, 0, 130);
+  width: 200px;
+  height: 200px;
+  border-radius: 0px 0px 10px 10px;
+  color: rgb(255,255,255);
+  padding: 10px;
+}
+.container {
+  position: relative ;
+  border-radius: 10px 10px 0px 0px;
+  padding: 5px;
+  background-color:rgb(26, 0, 130);
+}
+
+.movie-photo {
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom:0;
+  color: rgb(255, 255, 255);
+  font-size: 16px; /* 폰트 크기 조정 가능 */
+  padding: 10px;
+  display: none;
+}
+
+.container:hover .text {
+  display: block;
+}
+.container:hover .movie-photo {
+  filter:blur(10px);
+}
+
+html{
+  background-color: rgb(19, 10, 51);
+}
