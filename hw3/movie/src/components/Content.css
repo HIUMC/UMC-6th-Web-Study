@@ -1,0 +1,24 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  row-gap: 10px;
+  column-gap: 20px;
+}
+.item {
+  border: 1px solid gray;
+  width: 100%;
+}
+.overview {
+  display: none;
+}
+.item:hover .another {
+  display: none;
+}
+.item:hover .overview {
+  display: block;
+  text-overflow: ellipsis;
+}
+img {
+  width: 100%;
+  object-fit: cover;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="index.css" />
+    <title>HTML5</title>
+  </head>
+  <body>
+    <div class="content">
+      <h1>회원가입</h1>
+      <div class = "section">
+        <p>이름</p>
+        <input type="text" class="input" id="name" name="username" value="" />
+        <p id="nameComment"></p>
+      </div>
+      <div class = "section">
+        <p>이메일</p>
+        <input type="text" class="input"id="email" name="usermail" value=""/>
+        <p id="emailComment"></p>
+      </div>
+      <div class = "section">
+        <p>나이</p>
+        <input type="text" class="input"id="age" name="userage" value=""/>
+        <p id="ageComment"></p>
+      </div>
+      <div class = "section">
+        <p>비밀번호</p>
+        <input type="text" class="input"id="password" name="userpassword" value=""/>
+        <p id="passwordComment"></p>
+      </div>
+      <div class = "section">
+        <p>비밀번호 확인</p>
+        <input type="text" class="input"id="passwordCheck" name="userpasswordCheck" value=""/>
+        <p id="passwordCheckComment"></p>
+      </div>
+      <button type="" id="button" onclick="submit()" >가입하기</button>
+    </div>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>

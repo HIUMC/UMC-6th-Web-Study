@@ -1,22 +1,29 @@
 * {
   margin: 0;
 }
-#content {
-  background-color: white;
-  padding: 100px;
-  width: 400px;
-  height: 100px;
-}
 
-#modal {
-  display: none;
-  width: 100%;
-  height: 100%;
+#modal-wrapper {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.639);
-  flex-direction: column;
-  align-items: start;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
   justify-content: center;
+}
+#modal {
+  background: white;
+  padding: 24px 16px;
+  border-radius: 4px;
+  width: 320px;
+}
+
+#modal .title {
+  font-size: 24px;
+  font-weight: bold; /*굵게*/
+}
+.close {
+  text-align: right;
 }
