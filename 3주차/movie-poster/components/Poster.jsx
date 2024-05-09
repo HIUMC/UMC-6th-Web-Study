@@ -2,7 +2,8 @@ import { useState } from "react";
 import "./Poster.css";
 
 function Poster({ title, overview, posterPath, vote }) {
-  const path = `https://image.tmdb.org/t/p/w500${posterPath}`;
+  const base = "https://image.tmdb.org/t/p/w500"
+  const path = `${base}${posterPath}`;
 
   return (
     <div className="Poster">
