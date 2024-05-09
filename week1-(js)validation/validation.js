@@ -95,18 +95,26 @@ function humanInput() {
     checkMassage.classList.remove("error");
     checkMassage.classList.add("success");
   }
-
-  buttonClick = () => {
-    if (
-      nameMassage.classList.contains("success") &&
-      mailMassage.classList.contains("success") &&
-      ageMassage.classList.contains("success") &&
-      passwordMassage.classList.contains("success") &&
-      checkMassage.classList.contains("success")
-    ) {
-      document.querySelector(".modal").style.display = "block";
-    } else {
-      document.querySelector(".modal").style.display = "none";
-    }
-  };
 }
+
+buttonClick = () => {
+  if (
+    nameMassage.classList.contains("success") &&
+    mailMassage.classList.contains("success") &&
+    ageMassage.classList.contains("success") &&
+    passwordMassage.classList.contains("success") &&
+    checkMassage.classList.contains("success")
+  ) {
+    let modal = document.getElementById("modal");
+    console.log("성공");
+    modal.classList.remove("none");
+    modal.classList.add("see");
+  }
+};
+
+modalClick = () => {
+  let modal = document.getElementById("modal");
+  console.log("닫기");
+  modal.classList.remove("see");
+  modal.classList.add("none");
+};

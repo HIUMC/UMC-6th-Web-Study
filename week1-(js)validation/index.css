@@ -19,7 +19,7 @@ Body {
   gap: 10px;
   margin: 0 auto;
 
-  padding: 20px 100px 20px 100px;
+  padding: 0px 100px 30px 100px;
   border: none;
   border-radius: 10px;
   background-color: rgb(207, 234, 241);
@@ -36,8 +36,8 @@ Body {
   background-color: rgb(207, 234, 241);
   display: flex;
   flex-direction: column;
-  margin-bottom: 5px;
-  margin-top: 5px;
+  margin-bottom: 0px;
+  margin-top: 0px;
 }
 
 .Basic button {
@@ -64,6 +64,19 @@ Body {
   color: red;
 }
 
-.modal {
+.see {
+  border: none;
+  border-radius: 10px;
+  display: inline-block;
+  padding: 20px;
+  background-color: rgb(230, 181, 223);
+
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.none {
   display: none;
 }

@@ -10,34 +10,33 @@
   <body>
     <div class="Basic">
       <h1>회원가입</h1>
-      <form action="">
-        <label for="name">이름</label>
-        <input onchange="humanInput()" type="text" id="name" />
-        <div id="nameMassage"></div>
 
-        <label for="mail">이메일</label>
-        <input onchange="humanInput()" type="email" id="mail" required />
-        <div id="mailMassage"></div>
+      <label for="name">이름</label>
+      <input onchange="humanInput()" type="text" id="name" />
+      <div id="nameMassage"></div>
 
-        <label for="age">나이</label>
-        <input onchange="humanInput()" type="number" id="age" required />
-        <div id="ageMassage"></div>
+      <label for="mail">이메일</label>
+      <input onchange="humanInput()" type="email" id="mail" required />
+      <div id="mailMassage"></div>
 
-        <label for="password">비밀번호</label>
-        <input onchange="humanInput()" type="password" id="password" required />
-        <div id="passwordMassage"></div>
+      <label for="age">나이</label>
+      <input onchange="humanInput()" type="number" id="age" required />
+      <div id="ageMassage"></div>
 
-        <label for="check">비밀번호 확인</label>
-        <input onchange="humanInput()" type="password" id="check" required />
-        <div id="checkMassage"></div>
+      <label for="password">비밀번호</label>
+      <input onchange="humanInput()" type="password" id="password" required />
+      <div id="passwordMassage"></div>
 
-        <button onclick="buttonClick()">가입하기</button>
-      </form>
+      <label for="check">비밀번호 확인</label>
+      <input onchange="humanInput()" type="password" id="check" required />
+      <div id="checkMassage"></div>
+
+      <button onclick="buttonClick()">가입하기</button>
     </div>
-    <div class="modal">
+    <div id="modal" class="none">
       <h1>가입 완료!</h1>
       <p>umc 챌린저 가입을 축하합니다</p>
-      <button>닫기</button>
+      <button onclick="modalClick()">닫기</button>
     </div>
   </body>
 </html>
