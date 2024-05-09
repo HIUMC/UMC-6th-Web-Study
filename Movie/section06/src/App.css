@@ -37,19 +37,26 @@
 }
 
 .text {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom:0;
-  color: rgb(255, 255, 255);
-  font-size: 16px; /* 폰트 크기 조정 가능 */
-  padding: 10px;
   display: none;
 }
 
 .container:hover .text {
-  display: block;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 10;
+  -webkit-box-orient: vertical;
+  white-space: normal;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  color: rgb(254, 254, 254);
+  font-size: 16px; /* 폰트 크기 조정 가능 */
+  text-align: center;
+  margin-top: 60px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 .container:hover .movie-photo {
   filter:blur(10px);
