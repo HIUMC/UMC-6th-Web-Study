@@ -1,0 +1,21 @@
+body{
+
+}
+.flex{
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.ifOpen{
+  display: flex;
+  background-color: white;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  width: 50%;
+  height: auto;
+  border: 2px solid black;
+
+  position: fixed;
+  top: 25%;
+  left: 25%;
+}
