@@ -1,0 +1,12 @@
+.movie-list-wrapper {
+  display: flex;
+  justify-content: center; /* 수평 정렬 */
+}
+
+.movie-list {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 10px;
+  justify-content: center;
+  align-items: center; /* 수직 정렬 */
+}

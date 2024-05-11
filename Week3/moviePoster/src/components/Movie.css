@@ -1,0 +1,16 @@
+.movie-poster {
+  width: 100%;
+}
+
+.movie-poster img {
+  width: 100%;
+}
+
+.movie-info {
+  background-color: rgb(57, 62, 122);
+  color: white;
+}
+
+h5 {
+  margin: 0;
+}
