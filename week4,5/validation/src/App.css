@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(188, 229, 234);
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(188, 229, 234);
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: aliceblue;
+  border-radius: 10px;
+  width: 400px;
+  height: 80vh;
+}
+
+span {
+  font-size: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+input {
+  margin: 3px 0px 7px 0px;
+  padding: 0.5rem;
+  font-size: 10px;
+  border: 1px solid white;
+  border-radius: 0.25rem;
+  width: 200px;
+  height: 0.5rem;
+}
+
+.wrapper {
+  width: 500px;
+}
+
+#title {
+  text-align: center;
+  width: 55%;
+  height: 50px;
+  border-bottom: 2px solid white;
+  margin-bottom: 10px;
+}
+
+button {
+  font-size: 0.5rem;
+  border: none;
+  background-color: rgb(138, 143, 143);
+  border-radius: 0.25rem;
+  width: 175px;
+  height: 1rem;
+  color: white;
+  cursor: pointer;
+}
+
+.Valid {
+  font-size: 10px;
+  color: red;
+}
+.Valid_true {
+  color: green;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
