@@ -1,0 +1,14 @@
+.List {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  column-gap: 10px;
+  row-gap: 5px;
+}
+
+body {
+  background-color: rgb(66, 66, 162);
+  min-height: 100vh;
+  height: 100%;
+}
