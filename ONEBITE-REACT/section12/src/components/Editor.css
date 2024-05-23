@@ -1,0 +1,40 @@
+.Editor section {
+  margin-bottom: 40px;
+}
+
+.Editor section h4 {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.Editor section input,
+textarea {
+  background-color: rgb(236, 236, 236);
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 10px 20px;
+}
+
+.Editor section textarea {
+  padding: 20px;
+  width: 100%;
+  min-height: 200px;
+  resize: vertical;
+  /* 가로로는 못 늘리고 세로로만 늘릴 수 있게 */
+  box-sizing: border-box;
+  /* 박스가 화면 밖으로 못 나가게 */
+}
+
+.Editor .emotion_section .emotion_list_wrapper {
+  display: flex;
+  justify-content: space-around;
+  gap: 2%;
+}
+
+.Editor .button_section {
+  display: flex;
+  justify-content: space-between;
+  /* space-around는 동일한 간격(컨테이너, 아이템 사이 모두 다)
+  space-between은 아이템 사이는 동일하지만 컨테이너 양 끝에 고정 */
+}
