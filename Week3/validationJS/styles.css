@@ -1,0 +1,95 @@
+body {
+  background-color: #b2d9e8;
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  top: 0;
+  left: 0;
+}
+
+.validation_wrapper {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: auto;
+  justify-content: center;
+  text-align: center;
+  width: 700px;
+  height: 580px;
+  border-radius: 10px;
+  background-color: rgb(222, 245, 254);
+}
+
+.validation {
+  margin: 70px auto;
+  width: 350px;
+}
+
+.validation h2 {
+  padding-bottom: 15px;
+  border-bottom: 1px solid white;
+}
+
+.validation form {
+  margin: 10px auto;
+  width: 300px;
+}
+
+.validation p {
+  text-align: left;
+  font-size: 13px;
+  margin: 0px;
+  margin-top: 15px;
+}
+
+.validation input {
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: rgb(222, 245, 254);
+  width: 300px;
+  height: 30px;
+}
+
+.validation button {
+  width: 200px;
+  height: 35px;
+  border: 0;
+  background-color: rgb(120, 119, 119);
+  color: white;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+.hide {
+  display: none;
+}
+
+.name-success,
+.email-success,
+.age-success,
+.password-success,
+.checkPW-success {
+  text-align: left;
+  color: rgb(4, 172, 4);
+  font-size: 12px;
+  margin: 0;
+}
+
+.name-fail,
+.email-fail,
+.age-fail,
+.age-fail.number,
+.age-fail-negative,
+.age-fail-decimal,
+.age-fail-minor,
+.password-fail,
+.password-fail-min4,
+.password-fail-max12,
+.checkPW-fail {
+  text-align: left;
+  color: rgb(242, 108, 108);
+  font-size: 12px;
+  margin: 0;
+}
