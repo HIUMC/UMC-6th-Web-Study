@@ -25,7 +25,6 @@ export const NavLink = styled(Link)`
   color: white;
 
   &:hover {
-    text-decoration: underline;
     font-size: 19px;
     font-weight: 600;
     cursor: pointer;
@@ -36,7 +35,6 @@ export const TitleLink = styled(Link)`
   color: white;
 
   &:hover {
-    text-decoration: underline;
     font-size: 21px;
     font-weight: 600;
     cursor: pointer;
