@@ -1,0 +1,60 @@
+body {
+  display: grid;
+  place-items: center;
+  background-color: rgb(187, 211, 231);
+  font-family: 나눔고딕;
+  margin-top: 180px;
+}
+p {
+  margin-top: 30px;
+  margin-bottom: 0;
+  font-size: 15px;
+}
+#div1 {
+  background-color: rgb(228, 240, 243);
+  width: 700px;
+  height: 600px;
+  border-radius: 10px;
+}
+#div2 {
+  padding-top: 55px;
+  width: 300px;
+  margin: auto;
+}
+h1 {
+  border-bottom: white solid 3px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+input {
+  display: block;
+  width: 280px;
+  height: 25px;
+  border-radius: 10px;
+  border: 2px rgba(211, 223, 227, 0.998) solid;
+  background-color: rgb(228, 240, 243);
+  margin: auto;
+}
+#button {
+  border: none;
+  background-color: rgb(91, 90, 90);
+  color: rgb(250, 253, 253);
+  border-radius: 5px;
+  width: 200px;
+  height: 30px;
+  margin-top: 30px;
+  margin-left: 50px;
+}
+.hide {
+  display: none;
+}
+.idsuccess, .pwsuccess, .match, .agesuccess, .emsuccess {
+  color: rgb(44, 122, 44);
+  font-size: 12px;
+  margin: 0;
+}
+.idfail, .idfail2, .pwfail, .mismatch-message,.agefail1, .agefail2, .agefail3, .agefail4, .emfail{
+  color: red;
+  font-size: 12px;
+  margin: 0;
+}

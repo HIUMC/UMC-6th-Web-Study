@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <link rel="stylesheet" href="Lstyle.css">
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <div id="div1">
+            <div id="div2">
+                <h1>회원가입</h1>
+                <form action="" autocomplete="off">
+                    <p><input type="text" autofocus id="id" placeholder="아이디"></p>
+                    <div class="idsuccess hide">멋진 이름이네요!</div>
+                    <div class="idfail hide">문자열이어야 합니다.</div>
+                    <div class="idfail2 hide">필수 입력 항목입니다!</div>
+
+                    <p><input type="text" id="email" placeholder="이메일"></p>
+                    <div class="emfail hide">올바른 이메일 형식이 아닙니다!</div>
+                    <div class="emsuccess hide">올바른 이메일 형식입니다!</div>
+
+                    <p><input type="text" id="age" placeholder="나이"></p>
+                    <div class="agefail1 hide">나이는 숫자 형식이어야 합니다!</div>
+                    <div class="agefail2 hide">나이는 음수가 될 수 없습니다!</div>
+                    <div class="agefail3 hide">나이는 소수가 될 수 없습니다!</div>
+                    <div class="agefail4 hide">미성년자는 가입할 수 없습니다!</div>
+                    <div class="mustinput hide">나이를 입력해 주세요!</div>
+                    <div class="agesuccess hide">올바른 나이 형식입니다!</div>
+
+                    <p><input type="password" id="password1" placeholder="비밀번호"></p>
+                    <div class="pwfail hide">비밀번호는 최소 4자리 이상, 12자리 이하이어야 합니다.</div>
+                    <div class="pwsuccess hide">올바른 비밀번호입니다!</div>
+
+                    <p><input type="password" id="password2" placeholder="비밀번호 확인"></p>
+                    <div class="mismatch-message hide">비밀번호가 일치하지 않습니다.</div>
+                    <div class="match hide">비밀번호가 일치합니다!</div>
+                    <button id="button">가입하기</button>
+                </form>
+            </div>
+        </div>
+        <script src="./Login.js"></script>
+    </body>
+</html>
