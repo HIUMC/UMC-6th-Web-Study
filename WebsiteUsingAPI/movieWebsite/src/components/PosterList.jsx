@@ -1,6 +1,6 @@
-import "./PosterList.css";
+//import "./PosterList.css";
+import styled from "styled-components";
 import MoviePoster from "./MoviePoster";
-import Poster from "./Poster";
 import { useNavigate } from "react-router-dom";
 
 const PosterList = ({ movieList }) => {
@@ -11,12 +11,23 @@ const PosterList = ({ movieList }) => {
   };
   console.log(movieList);
   return (
-    <div className="movieGrid">
+    <StyledGrid className="movieGrid">
       {movieList &&
         movieList.map((movie) => {
           return <MoviePoster key={movie.id} movie={movie} />;
         })}
-    </div>
+    </StyledGrid>
   );
 };
+
+const StyledGrid = styled.div`
+
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  place-items: center;
+  overflow: hidden;
+  column-gap: 10px;
+  row-gap: 20px;
+}`;
 export default PosterList;
