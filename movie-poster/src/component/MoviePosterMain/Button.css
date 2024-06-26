@@ -1,0 +1,14 @@
+.Button{
+    display: flex;
+    border: none;
+    background-color: rgb(23, 23, 58);
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.Button:hover{
+    color: yellow;
+    font-weight: bold;
+    font-size: 20px;
+}
