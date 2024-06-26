@@ -1,0 +1,26 @@
+.Editor{
+    display: flex;
+    gap: 10px;
+}
+/* className = Editor인 요소의 자식 요소들 모두 간격이 10px */
+/* 즉, input과 button 사이 간격이 10px이 됨 */
+
+.Editor > input {
+    flex: 1;
+    /* flex를 1로 설정하면 input 태그가 
+    부모 요소 (App 컴퍼넌트)의 크기를 벗어나지 않는 선에서 
+    최대의 길이만큼 늘어나게 된다. */
+    padding : 15px;
+    border: 1px solid rgb(207, 207, 207);
+    border-radius: 5px;
+}
+
+.Editor > button {
+    cursor: pointer;
+    /*  */
+    background-color: rgb(103, 173, 103);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 80px;
+}
