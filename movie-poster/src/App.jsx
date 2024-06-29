@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Route, Routes, useNavigate, useLocation } from 'react-router-dom';
+import { Route, Routes, Link, useLocation } from 'react-router-dom';
 import Home from './Pages/Home';
 import Popular from './Pages/Popular';
 import Navor from './component/MoviePosterMain/Navor';
@@ -9,27 +9,16 @@ import Upcoming from './Pages/Upcoming';
 import NotFound from './Pages/NotFound';
 import MovieDetail from './Pages/MovieDetail';
 import Toprated from './Pages/Toprated';
+import styled from 'styled-components';
+
+const StyledLink = styled(Link)`
+  text-decoration: none;
+  color: inherit; // Link의 기본 색상을 상속받음
+`;
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
-  const nav = useNavigate();
-
-  const gotohome = () => {
-    nav('/');
-  };
-  const gotopop = () => {
-    nav('/popular');
-  };
-  const gotoUp = () => {
-    nav('/upcoming');
-  };
-  const gotoTop = () => {
-    nav('/toprated');
-  };
-  const gotoNow = () => {
-    nav('/nowplaying');
-  };
   const handleLoginClick = () => {
     setIsLoggedIn(!isLoggedIn);
   };
@@ -43,12 +32,12 @@ function App() {
     <>
       {showNavor && (
         <Navor
-          title={<Button text={"UMC Movie"} onClick={gotohome} />}
+          title={<StyledLink to = "/"><Button text={"UMC Movie"} /></StyledLink>}
           login={<Button text={isLoggedIn ? "Logout" : "Login"} onClick={handleLoginClick} />}
-          popular={<Button text={"Popular"} onClick={gotopop} />}
-          upcoming={<Button text={"Upcoming"} onClick={gotoUp} />}
-          toprated={<Button text={"TopRated"} onClick={gotoTop} />}
-          nowplaying={<Button text={"Nowplaying"} onClick={gotoNow} />}
+          popular={<StyledLink to = "/popular"><Button text={"Popular"}/></StyledLink>}
+          upcoming={<StyledLink to = "/upcoming"><Button text={"Upcoming"} /></StyledLink>}
+          toprated={<StyledLink to = "toprated"><Button text={"TopRated"}/></StyledLink>}
+          nowplaying={<StyledLink to = "/nowplaying"><Button text={"Nowplaying"}/></StyledLink>}
           
         />
       )}
