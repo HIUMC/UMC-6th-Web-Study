@@ -7,11 +7,12 @@ const NowPlayingPage = () => {
   const movies = useContext(MovieContext);
   const getMovies = useContext(getMovieContext);
 
-  const API_KEY = "94106d9b31cd43ca225f0482d2168f68";
-  const nowplaying_URL = `https://api.themoviedb.org/3/movie/now_playing?api_key=${API_KEY}&language=en-US&page=1`;
+  const nowplaying_url = `https://api.themoviedb.org/3/movie/now_playing?api_key=${
+    import.meta.env.VITE_API_KEY
+  }&language=en-US&page=1`;
 
   useEffect(() => {
-    getMovies(nowplaying_URL);
+    getMovies(nowplaying_url);
   }, [movies]);
 
   return (

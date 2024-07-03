@@ -1,0 +1,32 @@
+.Membership {
+  height: 100vh;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  color: white;
+  background-color: rgb(31, 31, 113);
+}
+
+.Membership .membership-input {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.Membership .membership-input input {
+  font-size: 15px;
+  width: 80vw;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.Membership .membership-input button {
+  font-size: 15px;
+  width: 90vw;
+  margin: 20px;
+  padding: 15px;
+  border-radius: 10px;
+}

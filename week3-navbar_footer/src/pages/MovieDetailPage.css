@@ -1,0 +1,33 @@
+.MovieDetailPage {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  background-color: rgb(49, 91, 159);
+  color: white;
+  justify-content: center;
+}
+
+.MovieDetailPage .MovieDetailPage-content {
+  width: 600px;
+  height: auto;
+  display: flex;
+  margin: 50px;
+  gap: 60px;
+  padding: 10px;
+}
+
+.MovieDetailPage img {
+  width: 200px;
+  height: 300px;
+  padding-top: 30px;
+}
+
+@media screen and (max-width: 600px) {
+  .MovieDetailPage .MovieDetailPage-content {
+    flex-direction: column;
+    margin: 0px;
+    gap: 0px;
+    width: 400px;
+    align-items: center;
+  }
+}

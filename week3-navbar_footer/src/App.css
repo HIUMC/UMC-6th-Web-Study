@@ -1,27 +1,3 @@
-.Navbar {
-  font-size: 20px;
-  font-weight: bold;
-  display: flex;
-  background-color: rgb(50, 50, 159);
-  color: white;
-  justify-content: space-between;
-  height: 10vh;
-  align-items: center; /* 수직 가운데 정렬 */
-  padding: 5px;
-}
-
-.Navbar .right {
-  display: flex;
-  gap: 20px;
-}
-
-.Navbar button {
-  background-color: rgb(50, 50, 159);
-  border: none;
-  color: white;
-  font-size: 15px;
-}
-
 .movie-container {
   width: 100%;
   height: 100%;
@@ -30,3 +6,4 @@
   flex-wrap: wrap;
   justify-content: space-around;
 }
+

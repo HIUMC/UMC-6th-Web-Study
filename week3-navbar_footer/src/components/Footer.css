@@ -1,0 +1,9 @@
+.Footer {
+  font-size: 15px;
+  font-style: italic;
+  background-color: rgb(50, 50, 159);
+  color: white;
+  height: 3vh;
+  align-items: center; /* 수직 가운데 정렬 */
+  padding: 5px;
+}

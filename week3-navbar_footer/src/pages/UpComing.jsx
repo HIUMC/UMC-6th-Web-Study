@@ -7,8 +7,9 @@ const UpComing = () => {
   const movies = useContext(MovieContext);
   const getMovies = useContext(getMovieContext);
 
-  const API_KEY = "94106d9b31cd43ca225f0482d2168f68";
-  const upcoming_URL = `https://api.themoviedb.org/3/movie/upcoming?api_key=${API_KEY}&language=en-US&page=1`;
+  const upcoming_URL = `https://api.themoviedb.org/3/movie/upcoming?api_key=${
+    import.meta.env.VITE_API_KEY
+  }&language=en-US&page=1`;
 
   useEffect(() => {
     getMovies(upcoming_URL);

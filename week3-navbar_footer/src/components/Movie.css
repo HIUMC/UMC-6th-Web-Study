@@ -1,25 +1,17 @@
 .Movie {
   background-color: rgb(50, 50, 179);
   color: white;
-  margin: 10px;
+  margin: 11px;
   display: flex;
   flex-direction: column;
-  padding: 15px;
+  padding: 30px;
   width: 200px;
   height: 350px;
   border: none;
   border-radius: 10px;
 }
 
-.Movie img {
-  width: 150px;
-  margin-bottom: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  /* 사진 중간 맞춤 */
-}
-
-.Movie .text {
+.Movie .not_hover .title {
   display: flex;
   justify-content: space-between;
 }

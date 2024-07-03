@@ -1,0 +1,17 @@
+.SideBar {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background-color: rgb(31, 31, 113);
+  padding: 40px;
+}
+
+.SideBar button {
+  background-color: rgb(31, 31, 113);
+  color: white;
+  border: none;
+  font-size: 25px;
+  text-align: left;
+}
